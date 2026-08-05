@@ -1,67 +1,67 @@
 {
-    "name":  "@minisource/auth-ui",
-    "version":  "0.1.0",
-    "type":  "module",
-    "main":  "./dist/index.cjs",
-    "module":  "./dist/index.js",
-    "types":  "./dist/index.d.ts",
-    "exports":  {
-                    ".":  {
-                              "types":  "./dist/index.d.ts",
-                              "import":  "./dist/index.js",
-                              "require":  "./dist/index.cjs"
-                          },
-                    "./styles.css":  "./dist/styles.css"
-                },
-    "files":  [
-                  "dist"
-              ],
-    "scripts":  {
-                    "build":  "tsup",
-                    "typecheck":  "tsc --noEmit",
-                    "clean":  "rm -rf dist",
-                    "test":  "vitest run",
-                    "test:watch":  "vitest"
-                },
-    "dependencies":  {
-                         "@minisource/tokens":  "workspace:*",
-                         "@minisource/ui":  "workspace:*",
-                         "class-variance-authority":  "^0.7.1",
-                         "clsx":  "^2.1.1",
-                         "tailwind-merge":  "^2.6.0"
-                     },
-    "peerDependencies":  {
-                             "react":  "^18.0.0 || ^19.0.0",
-                             "react-dom":  "^18.0.0 || ^19.0.0",
-                             "@radix-ui/react-slot":  "^1.0.0 || ^1.1.0",
-                             "@radix-ui/react-label":  "^2.0.0 || ^2.1.0",
-                             "@radix-ui/react-separator":  "^1.0.0 || ^1.1.0",
-                             "@radix-ui/react-tabs":  "^1.0.0 || ^1.1.0"
-                         },
-    "peerDependenciesMeta":  {
-                                 "@radix-ui/react-slot":  {
-                                                              "optional":  true
-                                                          },
-                                 "@radix-ui/react-label":  {
-                                                               "optional":  true
-                                                           },
-                                 "@radix-ui/react-separator":  {
-                                                                   "optional":  true
-                                                               },
-                                 "@radix-ui/react-tabs":  {
-                                                              "optional":  true
-                                                          }
-                             },
-    "devDependencies":  {
-                            "@types/react":  "^19.0.2",
-                            "@types/react-dom":  "^19.0.2",
-                            "@radix-ui/react-slot":  "^1.1.1",
-                            "@radix-ui/react-label":  "^2.1.1",
-                            "@radix-ui/react-separator":  "^1.1.1",
-                            "@radix-ui/react-tabs":  "^1.1.2",
-                            "react":  "^19.0.0",
-                            "react-dom":  "^19.0.0",
-                            "tsup":  "^8.3.5",
-                            "typescript":  "^5.7.2"
-                        }
+    "name": "@minisource/auth-ui",
+    "version": "0.1.1",
+    "type": "module",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "require": "./dist/index.cjs"
+        },
+        "./styles.css": "./dist/styles.css"
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsup",
+        "typecheck": "tsc --noEmit",
+        "clean": "rm -rf dist",
+        "test": "vitest run",
+        "test:watch": "vitest"
+    },
+    "dependencies": {
+        "@minisource/tokens": "workspace:*",
+        "@minisource/ui": "workspace:*",
+        "class-variance-authority": "^0.7.1",
+        "clsx": "^2.1.1",
+        "tailwind-merge": "^2.6.0"
+    },
+    "peerDependencies": {
+        "react": "^18.0.0 || ^19.0.0",
+        "react-dom": "^18.0.0 || ^19.0.0",
+        "@radix-ui/react-slot": "^1.0.0 || ^1.1.0",
+        "@radix-ui/react-label": "^2.0.0 || ^2.1.0",
+        "@radix-ui/react-separator": "^1.0.0 || ^1.1.0",
+        "@radix-ui/react-tabs": "^1.0.0 || ^1.1.0"
+    },
+    "peerDependenciesMeta": {
+        "@radix-ui/react-slot": {
+            "optional": true
+        },
+        "@radix-ui/react-label": {
+            "optional": true
+        },
+        "@radix-ui/react-separator": {
+            "optional": true
+        },
+        "@radix-ui/react-tabs": {
+            "optional": true
+        }
+    },
+    "devDependencies": {
+        "@types/react": "^19.0.2",
+        "@types/react-dom": "^19.0.2",
+        "@radix-ui/react-slot": "^1.1.1",
+        "@radix-ui/react-label": "^2.1.1",
+        "@radix-ui/react-separator": "^1.1.1",
+        "@radix-ui/react-tabs": "^1.1.2",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "tsup": "^8.3.5",
+        "typescript": "^5.7.2"
+    }
 }

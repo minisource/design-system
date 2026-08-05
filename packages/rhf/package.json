@@ -1,54 +1,54 @@
 {
-    "name":  "@minisource/rhf",
-    "version":  "0.1.0",
-    "type":  "module",
-    "main":  "./dist/index.cjs",
-    "module":  "./dist/index.js",
-    "types":  "./dist/index.d.ts",
-    "exports":  {
-                    ".":  {
-                              "types":  "./dist/index.d.ts",
-                              "import":  "./dist/index.js",
-                              "require":  "./dist/index.cjs"
-                          }
-                },
-    "files":  [
-                  "dist"
-              ],
-    "scripts":  {
-                    "build":  "tsup",
-                    "typecheck":  "tsc --noEmit",
-                    "clean":  "rm -rf dist",
-                    "test":  "vitest run",
-                    "test:watch":  "vitest"
-                },
-    "dependencies":  {
-                         "@minisource/ui":  "workspace:*",
-                         "@hookform/resolvers":  "^3.9.1"
-                     },
-    "peerDependencies":  {
-                             "react":  "^18.0.0 || ^19.0.0",
-                             "react-dom":  "^18.0.0 || ^19.0.0",
-                             "react-hook-form":  "^7.0.0",
-                             "zod":  "^3.20.0"
-                         },
-    "peerDependenciesMeta":  {
-                                 "react-hook-form":  {
-                                                         "optional":  false
-                                                     },
-                                 "zod":  {
-                                             "optional":  true
-                                         }
-                             },
-    "devDependencies":  {
-                            "@types/react":  "^19.0.2",
-                            "@types/react-dom":  "^19.0.2",
-                            "react":  "^19.0.0",
-                            "react-dom":  "^19.0.0",
-                            "react-hook-form":  "^7.54.1",
-                            "zod":  "^3.24.1",
-                            "tsup":  "^8.3.5",
-                            "typescript":  "^5.7.2",
-                            "@hookform/resolvers":  "^3.9.1"
-                        }
+    "name": "@minisource/rhf",
+    "version": "0.1.1",
+    "type": "module",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "require": "./dist/index.cjs"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsup",
+        "typecheck": "tsc --noEmit",
+        "clean": "rm -rf dist",
+        "test": "vitest run",
+        "test:watch": "vitest"
+    },
+    "dependencies": {
+        "@minisource/ui": "workspace:*",
+        "@hookform/resolvers": "^3.9.1"
+    },
+    "peerDependencies": {
+        "react": "^18.0.0 || ^19.0.0",
+        "react-dom": "^18.0.0 || ^19.0.0",
+        "react-hook-form": "^7.0.0",
+        "zod": "^3.20.0"
+    },
+    "peerDependenciesMeta": {
+        "react-hook-form": {
+            "optional": false
+        },
+        "zod": {
+            "optional": true
+        }
+    },
+    "devDependencies": {
+        "@types/react": "^19.0.2",
+        "@types/react-dom": "^19.0.2",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "react-hook-form": "^7.54.1",
+        "zod": "^3.24.1",
+        "tsup": "^8.3.5",
+        "typescript": "^5.7.2",
+        "@hookform/resolvers": "^3.9.1"
+    }
 }
