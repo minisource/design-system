@@ -1,5 +1,12 @@
 # @minisource/rhf
 
+## 0.1.10
+
+### Patch Changes
+
+- Updated dependencies
+  - @minisource/ui@0.1.10
+
 ## 0.1.9
 
 ### Patch Changes
