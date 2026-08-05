@@ -1,5 +1,12 @@
 # @minisource/app-shell
 
+## 0.1.11
+
+### Patch Changes
+
+- Updated dependencies
+  - @minisource/ui@0.1.11
+
 ## 0.1.10
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @minisource/ui
 
+## 0.1.11
+
+### Patch Changes
+
+- Debug npm auth in release workflow
+
 ## 0.1.10
 
 ### Patch Changes
