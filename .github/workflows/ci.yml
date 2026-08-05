@@ -32,14 +32,14 @@ jobs:
       - name: Lint
         run: pnpm lint 2>/dev/null || echo "No lint script — skipping"
 
+      - name: Build
+        run: pnpm build
+
       - name: Type check
         run: pnpm typecheck
 
       - name: Test
         run: pnpm test
-
-      - name: Build
-        run: pnpm build
 
       - name: Pack check
         run: |
