@@ -36,7 +36,9 @@ jobs:
         run: pnpm test
 
       - name: Publish packages
-        run: pnpm publish -r --no-git-checks --access public
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+          pnpm changeset publish
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
