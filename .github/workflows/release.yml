@@ -35,12 +35,19 @@ jobs:
       - name: Test
         run: pnpm test
 
-      - name: Publish packages
+      - name: Debug auth
         run: |
-          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
-          pnpm changeset publish
+          echo "=== npm config ==="
+          npm config list 2>&1 | grep -v token | grep -v auth
+          echo "=== pnpm whoami ==="
+          pnpm whoami 2>&1 || true
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Publish packages
+        run: pnpm publish -r --access public --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Create GitHub Release
         if: success()
