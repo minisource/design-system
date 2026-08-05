@@ -1,5 +1,11 @@
 # @minisource/ui
 
+## 0.1.9
+
+### Patch Changes
+
+- Use direct pnpm publish with NPM_TOKEN env
+
 ## 0.1.8
 
 ### Patch Changes
