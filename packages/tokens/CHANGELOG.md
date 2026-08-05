@@ -1,5 +1,11 @@
 # @minisource/tokens
 
+## 0.1.6
+
+### Patch Changes
+
+- 5309792: Switch to version tags for GitHub Actions.
+
 ## 0.1.5
 
 ### Patch Changes

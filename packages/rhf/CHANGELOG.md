@@ -1,5 +1,13 @@
 # @minisource/rhf
 
+## 0.1.6
+
+### Patch Changes
+
+- 5309792: Switch to version tags for GitHub Actions.
+- Updated dependencies [5309792]
+  - @minisource/ui@0.1.6
+
 ## 0.1.5
 
 ### Patch Changes
