@@ -1,0 +1,140 @@
+/* MiniSource Design Tokens - CSS Custom Properties */
+
+@layer tokens {
+  /* ─── Light Mode ─── */
+  :root {
+    /* Background & Foreground */
+    --ms-background: 0 0% 100%;
+    --ms-foreground: 240 10% 3.9%;
+
+    /* Card */
+    --ms-card: 0 0% 100%;
+    --ms-card-foreground: 240 10% 3.9%;
+
+    /* Popover */
+    --ms-popover: 0 0% 100%;
+    --ms-popover-foreground: 240 10% 3.9%;
+
+    /* Primary */
+    --ms-primary: 240 5.9% 10%;
+    --ms-primary-foreground: 0 0% 98%;
+
+    /* Secondary */
+    --ms-secondary: 240 4.8% 95.9%;
+    --ms-secondary-foreground: 240 5.9% 10%;
+
+    /* Muted */
+    --ms-muted: 240 4.8% 95.9%;
+    --ms-muted-foreground: 240 3.8% 46.1%;
+
+    /* Accent */
+    --ms-accent: 240 4.8% 95.9%;
+    --ms-accent-foreground: 240 5.9% 10%;
+
+    /* Destructive */
+    --ms-destructive: 0 84.2% 60.2%;
+    --ms-destructive-foreground: 0 0% 98%;
+
+    /* Success */
+    --ms-success: 142 76% 36%;
+    --ms-success-foreground: 0 0% 98%;
+
+    /* Warning */
+    --ms-warning: 38 92% 50%;
+    --ms-warning-foreground: 0 0% 98%;
+
+    /* Info */
+    --ms-info: 221 83% 53%;
+    --ms-info-foreground: 0 0% 98%;
+
+    /* Border, Input, Ring */
+    --ms-border: 240 5.9% 90%;
+    --ms-input: 240 5.9% 90%;
+    --ms-ring: 240 5.9% 10%;
+
+    /* Radius */
+    --ms-radius: 0.5rem;
+
+    /* Shadows */
+    --ms-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --ms-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --ms-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --ms-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+    /* Typography */
+    --ms-font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+    --ms-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+
+    /* Spacing scale (base 4px) */
+    --ms-space-0: 0;
+    --ms-space-1: 0.25rem;
+    --ms-space-2: 0.5rem;
+    --ms-space-3: 0.75rem;
+    --ms-space-4: 1rem;
+    --ms-space-5: 1.25rem;
+    --ms-space-6: 1.5rem;
+    --ms-space-8: 2rem;
+    --ms-space-10: 2.5rem;
+    --ms-space-12: 3rem;
+    --ms-space-16: 4rem;
+    --ms-space-20: 5rem;
+    --ms-space-24: 6rem;
+  }
+
+  /* ─── Dark Mode ─── */
+  .dark {
+    --ms-background: 240 10% 3.9%;
+    --ms-foreground: 0 0% 98%;
+
+    --ms-card: 240 10% 3.9%;
+    --ms-card-foreground: 0 0% 98%;
+
+    --ms-popover: 240 10% 3.9%;
+    --ms-popover-foreground: 0 0% 98%;
+
+    --ms-primary: 0 0% 98%;
+    --ms-primary-foreground: 240 5.9% 10%;
+
+    --ms-secondary: 240 3.7% 15.9%;
+    --ms-secondary-foreground: 0 0% 98%;
+
+    --ms-muted: 240 3.7% 15.9%;
+    --ms-muted-foreground: 240 5% 64.9%;
+
+    --ms-accent: 240 3.7% 15.9%;
+    --ms-accent-foreground: 0 0% 98%;
+
+    --ms-destructive: 0 62.8% 30.6%;
+    --ms-destructive-foreground: 0 0% 98%;
+
+    --ms-success: 142 76% 36%;
+    --ms-success-foreground: 0 0% 98%;
+
+    --ms-warning: 38 92% 50%;
+    --ms-warning-foreground: 0 0% 98%;
+
+    --ms-info: 221 83% 53%;
+    --ms-info-foreground: 0 0% 98%;
+
+    --ms-border: 240 3.7% 15.9%;
+    --ms-input: 240 3.7% 15.9%;
+    --ms-ring: 240 4.9% 83.9%;
+
+    --ms-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+    --ms-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.4), 0 1px 2px -1px rgb(0 0 0 / 0.3);
+    --ms-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+    --ms-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+  }
+
+  /* ─── Base styles ─── */
+  *,
+  *::before,
+  *::after {
+    border-color: hsl(var(--ms-border));
+  }
+
+  body {
+    background-color: hsl(var(--ms-background));
+    color: hsl(var(--ms-foreground));
+  }
+}

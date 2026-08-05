@@ -1,0 +1,30 @@
+{
+    "name": "minisource-design-system",
+    "version": "0.0.0",
+    "private": true,
+    "description": "MiniSource Design System monorepo",
+    "scripts": {
+        "build": "pnpm --filter @minisource/tokens build && pnpm --filter @minisource/ui build && pnpm --filter @minisource/auth-ui build && pnpm --filter @minisource/rhf build && pnpm --filter @minisource/app-shell build && pnpm --filter @minisource/api-core build && pnpm --filter @minisource/auth-sdk build && pnpm --filter @minisource/notifier-sdk build",
+        "build:tokens": "pnpm --filter @minisource/tokens build",
+        "build:ui": "pnpm --filter @minisource/ui build",
+        "build:auth-ui": "pnpm --filter @minisource/auth-ui build",
+        "build:rhf": "pnpm --filter @minisource/rhf build",
+        "build:app-shell": "pnpm --filter @minisource/app-shell build",
+        "clean": "pnpm -r run clean",
+        "changeset": "changeset",
+        "version-packages": "changeset version",
+        "release": "pnpm build && changeset publish",
+        "release:dry": "pnpm build && changeset publish --dry-run",
+        "test": "pnpm -r run test",
+        "typecheck": "pnpm -r run typecheck"
+    },
+    "devDependencies": {
+        "@changesets/changelog-github": "^0.7.0",
+        "@changesets/cli": "^2.31.1",
+        "@testing-library/jest-dom": "^7.0.0",
+        "@testing-library/react": "^16.3.2",
+        "@vitejs/plugin-react": "^6.0.3",
+        "jsdom": "^29.1.1",
+        "vitest": "^4.1.10"
+    }
+}

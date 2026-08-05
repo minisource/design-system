@@ -1,0 +1,61 @@
+@import '@minisource/tokens/css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: var(--ms-background);
+    --foreground: var(--ms-foreground);
+    --card: var(--ms-card);
+    --card-foreground: var(--ms-card-foreground);
+    --popover: var(--ms-popover);
+    --popover-foreground: var(--ms-popover-foreground);
+    --primary: var(--ms-primary);
+    --primary-foreground: var(--ms-primary-foreground);
+    --secondary: var(--ms-secondary);
+    --secondary-foreground: var(--ms-secondary-foreground);
+    --muted: var(--ms-muted);
+    --muted-foreground: var(--ms-muted-foreground);
+    --accent: var(--ms-accent);
+    --accent-foreground: var(--ms-accent-foreground);
+    --destructive: var(--ms-destructive);
+    --destructive-foreground: var(--ms-destructive-foreground);
+    --border: var(--ms-border);
+    --input: var(--ms-input);
+    --ring: var(--ms-ring);
+    --radius: var(--ms-radius);
+  }
+
+  .dark {
+    --background: var(--ms-background);
+    --foreground: var(--ms-foreground);
+    --card: var(--ms-card);
+    --card-foreground: var(--ms-card-foreground);
+    --popover: var(--ms-popover);
+    --popover-foreground: var(--ms-popover-foreground);
+    --primary: var(--ms-primary);
+    --primary-foreground: var(--ms-primary-foreground);
+    --secondary: var(--ms-secondary);
+    --secondary-foreground: var(--ms-secondary-foreground);
+    --muted: var(--ms-muted);
+    --muted-foreground: var(--ms-muted-foreground);
+    --accent: var(--ms-accent);
+    --accent-foreground: var(--ms-accent-foreground);
+    --destructive: var(--ms-destructive);
+    --destructive-foreground: var(--ms-destructive-foreground);
+    --border: var(--ms-border);
+    --input: var(--ms-input);
+    --ring: var(--ms-ring);
+    --radius: var(--ms-radius);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
