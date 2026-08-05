@@ -1,5 +1,13 @@
 # @minisource/ui
 
+## 0.1.7
+
+### Patch Changes
+
+- Build before typecheck for workspace dependencies.
+- Updated dependencies
+  - @minisource/tokens@0.1.7
+
 ## 0.1.6
 
 ### Patch Changes
