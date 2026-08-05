@@ -1,5 +1,11 @@
 # @minisource/ui
 
+## 0.1.8
+
+### Patch Changes
+
+- Fix CI release workflow npm authentication
+
 ## 0.1.7
 
 ### Patch Changes
